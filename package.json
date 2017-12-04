@@ -3,12 +3,19 @@
   "version": "0.0.1",
   "description": "Build, deploy, and test all in one command",
   "main": "./dist/index.js",
+  "bin": {
+    "launch": "./dist/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Jesse Strangfeld (jesse.strangfeld@gmail.com)",
+  "author": "Jesse Strangfeld <jesse.strangfeld@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dvrpc/launch.git"
+  },
   "license": "CC0-1.0",
-  "devDependencies": {
+  "dependencies": {
     "fs-extra": "^4.0.2",
     "opn": "^5.1.0"
   }
