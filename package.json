@@ -1,6 +1,6 @@
 {
   "name": "@dvrpc/launch",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Build, deploy, and test all in one command",
   "bin": {
     "demo": "./dist/index.js"
