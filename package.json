@@ -1,5 +1,5 @@
 {
-  "name": "@dvrpc/launch",
+  "name": "@dvrpc/demo",
   "version": "0.1.4",
   "description": "Build, deploy, and test all in one command",
   "bin": {
@@ -11,7 +11,7 @@
   "author": "Jesse Strangfeld <jesse.strangfeld@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dvrpc/launch.git"
+    "url": "https://github.com/dvrpc/demo.git"
   },
   "license": "CC0-1.0",
   "dependencies": {
