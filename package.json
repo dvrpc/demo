@@ -6,8 +6,7 @@
     "demo": "./dist/index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "npm link"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jesse Strangfeld <jesse.strangfeld@gmail.com>",
   "repository": {
