@@ -4,12 +4,12 @@ const { exec } = require('child_process')
 const fs = require('fs-extra')
 const opn = require('opn')
 const path = require('path')
-let config = require('./launch.config')
+let config = require('./demo.config')
 
 try {
-  const userConfig = require(path.join(process.cwd(), 'launch.config'))
+  const userConfig = require(path.join(process.cwd(), 'demo.config'))
   Object.assign(config, userConfig)
-} catch (e) { console.warn('No user launch.config.js found. Using default config') }
+} catch (e) { console.warn('No user demo.config.js found. Using default config') }
 
 if (!config.projectName.length) {
   config.projectName = path.basename(process.cwd())
@@ -29,11 +29,11 @@ const deploy = () => fs.copy(path.join(process.cwd(), config.srcDir), `${config.
 const launch = () => opn(`${config.serverRootUri}${config.projectName}`, {wait: false})
 
 const init = async () => {
-  console.time('Launch')
+  console.time('Demo')
   for (const fn of [build, clean, deploy, launch]) {
     await fn()
   }
-  console.timeEnd('Launch')
+  console.timeEnd('Demo')
 }
 
 init()
