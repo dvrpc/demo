@@ -1,6 +1,6 @@
 {
   "name": "@dvrpc/demo",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Build, deploy, and test all in one command",
   "bin": {
     "demo": "./dist/index.js"
@@ -15,6 +15,7 @@
   },
   "license": "CC0-1.0",
   "dependencies": {
+    "chokidar": "^1.7.0",
     "fs-extra": "^4.0.2",
     "opn": "^5.1.0"
   }

@@ -4,5 +4,6 @@ module.exports = {
   serverRootUri: 'http://intranet.dvrpc.org:8000/',
   buildArgs: '',
   projectName: '',
-  clean: true
+  clean: true,
+  watch: false
 }
