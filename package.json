@@ -17,6 +17,7 @@
   "dependencies": {
     "chokidar": "^1.7.0",
     "fs-extra": "^4.0.2",
-    "opn": "^5.1.0"
+    "opn": "^5.1.0",
+    "yargs": "^10.0.3"
   }
 }
