@@ -3,7 +3,8 @@
 const argv = require('yargs').command('$0 [projectName]', '', yargs => yargs.options({
   's': { alias: 'src', nargs: 1 },
   'd': { alias: 'dest', nargs: 1 },
-  'u': { alias: 'url', nargs: 1 }
+  'u': { alias: 'url', nargs: 1 },
+  'b': { alias: 'build', nargs: 1 }
 })).argv
 const { execSync } = require('child_process')
 const fs = require('fs-extra')
@@ -21,7 +22,7 @@ let args = {
   srcDir: argv.s || undefined,
   serverPath: argv.d || undefined,
   serverRootUri: argv.u || undefined,
-  buildArgs: argv._ || undefined,
+  buildArgs: argv.b || undefined,
   projectName: argv.projectName || undefined,
   clean: argv['disable-clean'] ? false : undefined,
   watch: argv.watch || undefined
