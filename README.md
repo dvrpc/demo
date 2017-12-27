@@ -1,5 +1,5 @@
 # demo
-Build, deploy, and test all in one command
+Build, clean, deploy, and launch your app with one command
 
 ## Install
 Run `npm i -g @dvrpc/demo`
@@ -21,3 +21,18 @@ module.exports = {
 }
 ```
 You can also use a JSON file (`demo.config.json`)
+
+## CLI options
+Options override settings defined in the configuration
+
+`demo [<projectName> -s <srcDir> -d <serverPath> -u <serverRootUri> -b <buildArgs> --watch --disable-clean` 
+
+## Watch
+All files in the project (except for the output directory) are watched and the command will run again.
+
+`demo --watch`
+
+## Disable clean step
+Overwrite all built files, but do not remove other files from the server.
+
+`demo --disable-clean`
