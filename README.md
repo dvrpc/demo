@@ -25,7 +25,7 @@ You can also use a JSON file (`demo.config.json`)
 ## CLI options
 Options override settings defined in the configuration
 
-`demo [<projectName> -s <srcDir> -d <serverPath> -u <serverRootUri> -b <buildArgs> --watch --disable-clean` 
+`demo [<projectName> -s <srcDir> -d <serverPath> -u <serverRootUri> -b <buildArgs> --watch --disable-clean]` 
 
 ## Watch
 All files in the project (except for the output directory) are watched and the command will run again.
