@@ -1,7 +1,7 @@
 module.exports = {
   srcDir: 'dist',
   serverPath: '\\\\DVRPC-Intranet0\\wwwroot-dev\\',
-  serverRootUri: 'http://intranet.dvrpc.org:8000/',
+  serverRootUri: 'http://dev.dvrpc.org/',
   buildArgs: '',
   projectName: '',
   clean: true,
